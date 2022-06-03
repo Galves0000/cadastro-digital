@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Cadastro de Escolas {% endblock %}</h1>
+
+    <h4> <a href="{{ url_for('main.create_escola')}}">
+            <span class="badge badge-warning">Criar</span>
+            </a>
+    </h4>
+    {% for post in posts %}
+        <a href="{{ url_for('main.post_escola', post_escolaid=post['idescola']) }}">
+            <h4>{{ post['nome'] }}</h4>
+        </a>
+        <a href="{{ url_for('main.edit_escola', id=post['idescola']) }}">
+            <span class="badge badge-warning">Alterar</span>
+        </a>
+        <span class="badge badge-primary">{{ post['created'] }}</span>
+        <hr>
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if current_user.is_authenticated %}
+<h1 class="title">
+
+  Cadastro de Aluno
+</h1>
+
+{% endif %}
+
+
+
+<h2 class="subtitle">
+  Assosciação Filantropica Arca das Crianças
+</h2>
+
+
+{% if current_user.is_authenticated %}
+
+    <h4> <a href="{{ url_for('main.create_aluno')}}">
+            <span class="badge badge-warning">Criar</span>
+            </a>
+    </h4>
+    {% for post in alunos %}
+        <a href="{{ url_for('main.post_aluno', post_alunoid=post['idaluno']) }}">
+            <h4>{{ post['nome'] }}</h4>
+        </a>
+        <span class="badge badge-primary">{{ post['created'] }}</span>
+        <a href="{{ url_for('main.edit_aluno', id=post['idaluno']) }}">
+            <span class="badge badge-warning">Alterar</span>
+        </a>
+        <hr>
+    {% endfor %}
+
+{% endif %}
+{% endblock %}
