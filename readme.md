@@ -6,13 +6,13 @@ Programas necessarios para Rodar o programa:
 
 
 1- ao clonar o programa acesse o mesmo atraves do terminal de comando
-  C:\Users\gabri\Documents\projeto\cadastro-digital
+  C:\Users\gabri\Documents\projeto\cadastro-digital-master
 
 2- ao acessar a pasta pelo terminal de comando ative o ambiente virtual "auth" com o comando:
   auth\Scripts\activate
 
 resultado:
-  (auth) C:\Users\gabri\Documents\projeto\cadastro-digital
+  (auth) C:\Users\gabri\Documents\projeto\cadastro-digital-master
   
  3- apos ativar o ambiente é necessario instruir o app para inicial, então digitamos o codigo:
       set FLASK_APP=project
@@ -38,7 +38,7 @@ C:\Users\gabri\Documents\projeto\flask_auth_app\auth\lib\site-packages\flask_sql
  se vc desejar recriar a pasta auth (ambiente virtual):
  
  5- acesse a pasta cadastro-digital pelo terminal de comando e crie um ambiente virtual usando os comando abaixo:
-  C:\Users\gabri\Documents\projeto\cadastro-digital
+  C:\Users\gabri\Documents\projeto\cadastro-digital-master
   
   comandos:
     py -3 -m venv auth
@@ -61,13 +61,13 @@ C:\Users\gabri\Documents\projeto\flask_auth_app\auth\lib\site-packages\flask_sql
   
  
  1- ao clonar o programa acesse o mesmo atraves do terminal de comando
-  C:\Users\gabri\Documents\projeto\cadastro-digital
+  C:\Users\gabri\Documents\projeto\cadastro-digital-master
 
 2- ao acessar a pasta pelo terminal de comando ative o ambiente virtual "auth" com o comando:
   auth/bin/activate
 
 resultado:
-  (auth) C:\Users\gabri\Documents\projeto\cadastro-digital
+  (auth) C:\Users\gabri\Documents\projeto\cadastro-digital-master
   
  3- apos ativar o ambiente é necessario instruir o app para inicial então digitamos o codigo:
       export FLASK_APP=project
@@ -93,7 +93,7 @@ C:\Users\gabri\Documents\projeto\flask_auth_app\auth\lib\site-packages\flask_sql
   se vc desejar recriar a pasta auth (ambiente virtual):
  
   5- acesse a pasta cadastro-digital pelo terminal de comando e crie um ambiente virtual usando os comando abaixo:
-  C:\Users\gabri\Documents\projeto\cadastro-digital
+  C:\Users\gabri\Documents\projeto\cadastro-digital-master
   
   comandos:
     python3 -m venv auth
